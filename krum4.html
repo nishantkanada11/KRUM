@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css">    -->
+    <!-- <link rel="stylesheet" href="styleio.css">  -->
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <header class="header">
+            <div class="top-bar">
+                <div class="top-bar_content">
+                    <section class="phone"><i class="icon fa fa-phone" style="color: rgb(82, 230, 82);"></i><a
+                            class="nav_link" href="tel:8128275764">8128275764</a></section>
+                    <section class="email"><i class="icon fa fa-envelope" style="color: rgb(79, 184, 250)"></i><a
+                            class="nav_link" href="mailto:krumcontainers@gmail.com"
+                            target="_blank">krumcontainers@gmail.com</a></section>
+                    <section class="instagram"><i class="icon fab fa-instagram" style="color: red"></i><a
+                            class="nav_link" href="https://www.instagram.com/krum_containers"
+                            target="_blank">krum_containers</a></section>
+                </div>
+            </div>
+            <div class="bottom-bar">
+                <div class="bottom-bar_content" style="justify-content: space-between;">
+                    <a href="index.html" class="logo"><img src="PIC/logo.svg" alt="KRUM CONTAINER"
+                            class="logo_img" /><span class="logo_text">KRUM CONTAINERS</span></a>
+                    <nav class="nav">
+                        <ul class="nav_list">
+                            <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                            <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                            <li class="nav_item"><a href="index.html" class="nav_link">Our Product</a></li>
+                            <li class="nav_item"><a href="tel:8128275764" class="btn">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="office">
+            <div class="office_title">
+                <h1 class="title office_title">Site Office:-</h1>
+            </div>
+
+            <div class="office_img">
+                <img src="PIC/1.jpg" alt="" class="card-pic">
+                <img src="PIC/1.jpg" alt="" class="card-pic">
+                <img src="PIC/1.jpg" alt="" class="card-pic">
+                <img src="PIC/1.jpg" alt="" class="card-pic">
+                <img src="PIC/1.jpg" alt="" class="card-pic">
+                <img src="PIC/1.jpg" alt="" class="card-pic">
+            </div>
+        </div>
+
+        <section class="contact-container">
+            <h1 class="title">Have A Question? Contact Us</h1>
+            <form method="post" action="feedb.php">
+                <!-- Row 1: Name and Email -->
+                <div class="row">
+                    <input type="text" name="fname" placeholder="Name*" required>
+                    <input type="email" name="email" placeholder="Email*" required>
+                </div>
+
+                <!-- Row 2: Contact Number and Company Name -->
+                <div class="row">
+                    <div class="contact-number">
+                        <select name="country_code" required>
+                            <option>🇮🇳 +91</option>
+                            <option>🇮🇳 +92</option>
+                            <option>🇮🇳 +93</option>
+                            <!-- More country codes can be added -->
+                        </select>
+                        <input type="tel" name="mobile" placeholder="Contact Number*" pattern="[0-9]{10}" required>
+                    </div>
+                    <input type="text" name="cname" placeholder="Company Name">
+                </div>
+
+                <!-- Row 3: Product and Purchase Plan -->
+                <div class="row">
+                    <select name="product" required>
+                        <option value="" disabled selected>Select Product</option>
+                        <option value="Office">Office Container</option>
+                        <option value="Security">Security Container</option>
+                        <option value="Capsule">Capsule Container</option>
+                        <option value="Site">Site Office</option>
+                        <option value="Labour">Labour Colony</option>
+                    </select>
+                    <select name="purchase_plan" required>
+                        <option value="" disabled selected>Planning to Buy</option>
+
+                        <option value="immediately">Immediately</option>
+                        <option value="in_1_month">In 1 Month</option>
+                    </select>
+                </div>
+
+                <!-- Row 4: Requirement Text Area -->
+                <div class="row">
+                    <textarea name="requirement" placeholder="Describe Your Requirement*" rows="4" required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="row">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        <div class="feedback">
+            <div class="feedback_title">
+                <h1 class="title">Your Valuable Feedback's</h1>
+            </div>
+            <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-7e26023e-dd4e-4ff3-bd12-75870db1e6c1" data-elfsight-app-lazy></div>
+        </div>
+
+
+        <footer class="footer" id="about">
+            <section class="footer-part">
+                <div class="footer-column">
+                    <img src="PIC/logo.svg" alt="KRUM CONTAINER" class="footer-logo">
+                    <p class="footer-text">
+                        At <strong>Krum Container</strong>, we specialize in manufacturing and supplying a wide range of
+                        premium
+                        portable containers including office containers, site cabins, bunkhouses, farmhouses, and
+                        customized living
+                        and workspace solutions.
+                    </p>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html">Our Product</a></li>
+                        <li><a href="tel:8128275764">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Office Address</h3>
+                    <p class="footer-text"><a
+                            href="https://www.google.com/maps/place/KRUM+CONTAINERS/@21.7557809,72.095171,619m/data=!3m2!1e3!4b1!4m6!3m5!1s0x395f511f6eefab39:0xd98c081eefff64ff!8m2!3d21.7557759!4d72.0977459!16s%2Fg%2F11x63cp02p?entry=ttu&g_ep=EgoyMDI1MDYyMy4yIKXMDSoASAFQAw%3D%3D">KRUM
+                            CONTAINERS<br>
+                            <p class="footerm-text">Plot No 148, near SK vidhyamandir Morden school, Ramdev society,
+                                Chitra Gujarat
+                                Industrial Development Corporation, Bhavnagar, Gujarat 364004</p>
+                    </p></a>
+                    <p class="footer-text">Email: <a href="mailto:krumcontainers@gmail.com"
+                            class="footere-text">krumcontainers@gmail.com</a></p>
+                    <p class="footer-text">Phone: <a href="tel:8128275764" class="footerm-text">8128275764</a></p>
+                </div>
+            </section>
+        </footer>
+
+        <div class="rights">
+            <p>Copyright &copy;2025 Krum Container.&nbsp;All rights reserved.</p>
+        </div>
+    </div>
+    <!-- Popup Script -->
+    <script>
+        window.onload = function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('status') === 'success') {
+                alert("Thank You! For Contacting Krum Container.");
+            }
+        };
+    </script>
+</body>
+
+</html>
